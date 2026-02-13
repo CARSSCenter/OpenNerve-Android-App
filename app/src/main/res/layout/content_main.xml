@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/layout_ble"
+            android:id="@+id/layout_ble"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_dvt"
+            android:id="@+id/layout_dvt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_oad"
+            android:id="@+id/layout_oad"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_therapy_session"
+            android:id="@+id/layout_therapy_session"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_stimulation_parameters"
+            android:id="@+id/layout_stimulation_parameters"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_hardware_parameters"
+            android:id="@+id/layout_hardware_parameters"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_system"
+            android:id="@+id/layout_system"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_measurement"
+            android:id="@+id/layout_measurement"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_time_date"
+            android:id="@+id/layout_time_date"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_acc"
+            android:id="@+id/layout_acc"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+        <include layout="@layout/layout_log"
+            android:id="@+id/layout_log"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">CARSS Controller</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Admin</string>
+    <string name="second_fragment_label">Clinician</string>
+
+    <string name="speakable_text_save">Save</string>
+    <string name="speakable_text_setting">Setting</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="passkey_of_security">000000</string>
+    <string name="device_name_of_scanfilter">CARSS</string>
+
+    <string name="state_idle"           >Stop</string>
+    <string name="state_scaning"        >Scanning</string>
+    <string name="state_connecting"     >Connecting</string>
+    <string name="state_connected"      >Connected</string>
+    <string name="state_disconnecting"  >Disconnecting</string>
+
+    <string name="UUID_Client_Characteristic_Config"        >00002902-0000-1000-8000-00805f9b34fb</string>
+    <string name="UUID_Nordic_UART_Service"                 >6E400001-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="UUID_Nordic_UART_RX_Characteristic"       >6E400002-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="UUID_Nordic_UART_TX_Characteristic"       >6E400003-B5A3-F393-E0A9-E50E24DCCA9E</string>
+
+    <string name="defStr">-----</string>
+
+    <string name="action_setUserClass"      >Set User Class</string>
+    <string name="action_selectAdmin"       >Admin</string>
+    <string name="action_selectClinician"   >Clinician</string>
+    <string name="action_selectPatient"     >Patient</string>
+    <string name="action_selectDVT"         >DVT Mode</string>
+    <string name="action_checkBond"         >Check Bond</string>
+
+    <string name="hint_edit_val"    >Enter the number of steps</string>
+
+    <string name="title_ble_status"                 >BLE Status</string>
+    <string name="title_ble_manufacturerData"       >- Broadcast Data</string>
+    <string name="title_ble_advance"                >- Advance Settings</string>
+    <string name="title_ble_pairing_code"           >Pairing Code</string>
+    <string name="title_ble_whitelist"              >Whitelist</string>
+
+    <string name="title_therapy_session"            >- Therapy Session</string>
+    <string name="title_stimulation_parameters"     >- Stimulation Parameters</string>
+    <string name="title_hardware_parameters"        >- Hardware Parameters</string>
+    <string name="title_system"                     >- System</string>
+    <string name="title_measurement"                >- Measurement</string>
+    <string name="title_log"                        >- Log</string>
+    <string name="title_time_and_date"              >- Time and Date</string>
+    <string name="title_oad"                        >- OAD and BSL</string>
+    <string name="title_dvt"                        >- DVT</string>
+    <string name="title_accelerometer"              >- Accelerometer</string>
+
+    <string name="status_success"                   >Pass</string>
+    <string name="status_error"                     >Fail</string>
+
+    <string name="side_remote"                      >[Remote]</string>[-
+
+    <string name="address">BLE Address</string>
+
+    <string name="payload01">DVDD</string>
+    <string name="payload02">BATT.MON1</string>
+    <string name="payload03">BATT.MON2</string>
+    <string name="payload04">IMP_INB</string>
+    <string name="payload05">IMP_INA</string>
+    <string name="payload06">THERM_REF</string>
+    <string name="payload07">THERM_OUT</string>
+    <string name="payload08">THERM_OFST</string>
+    <string name="payload09">VRECT_DET</string>
+    <string name="payload10">VRECT_OVP</string>
+    <string name="payload11">VCHG_PGOOD</string>
+    <string name="payload12">CHG1_STATUS</string>
+    <string name="payload13">CHG1_OVP_ERRn</string>
+    <string name="payload14">CHG2_STATUS</string>
+    <string name="payload15">CHG2_OVP_ERRn</string>
+    <string name="payload16">ENG2_SDNn</string>
+    <string name="payload17">ENG1_SDNn</string>
+    <string name="payload18">ECG_RLD</string>
+    <string name="payload19">ECG_HR_SDNn</string>
+    <string name="payload20">ECG_RR_SDNn</string>
+    <string name="payload21">TEMP_EN</string>
+    <string name="payload22">IMP_EN</string>
+
+    <string name="copied_text">Text copied to clipboard.</string>
+
+    <string name="str_autoconnect">AutoConnect</string>">
+
+    <string-array name="spinnerCommandPayloadHPIDs">
+        <item> HP01 IPG serial number	            </item>
+        <item> HP02 IPG model	                    </item>
+        <item> HP03 IPG BLE ID	                    </item>
+        <item> HP04 IPG production location	        </item>
+        <item> HP05 IPG FW version	                </item>
+        <item> HP06 IPG manufacturing date	        </item>
+        <item> HP07 IPG implantation date	        </item>
+        <item> HP08 Linked CRC BLE ID	            </item>
+        <item> HP09 Linked CRC key	                </item>
+        <item> HP10 Linked CRC FW version	        </item>
+        <item> HP11 Linked PRC BLE ID	            </item>
+        <item> HP12 Linked PRC key	                </item>
+        <item> HP13 Linked PRC FW version	        </item>
+        <item> HP14 BLE Broadcast Timeout	        </item>
+        <item> HP15 BLE Idle Connection	            </item>
+        <item> HP16 BLE Disconnect Request	        </item>
+        <item> HP17 BLE Interval	                </item>
+        <item> HP18 Impedance Test Interval	        </item>
+        <item> HP19 Battery Test Interval	        </item>
+        <!-- <item> HP20 Magnet Shutdown Min Time	    </item> -->
+        <!-- <item> HP21 Magnet Shutdown Max Time	    </item> -->
+        <item> HP22 Magnet Wakeup Min Time	        </item>
+        <item> HP23 Magnet Wakeup Max Time	        </item>
+        <item> HP24 Magnet Reset Min Time	        </item>
+        <item> HP25 Magnet Reset Max Time	        </item>
+        <item> HP26 Battery ER Level	            </item>
+        <item> HP27 Battery EOS Level	            </item>
+        <item> HP28 Language	                    </item>
+        <item> HP29 Idle Duration	                </item>
+        <item> HP30 RTC Interrupt Period            </item>
+    </string-array>
+
+    <string-array name="spinnerCommandPayloadSPIDsH1">
+        <item> SP01 Number of Therapy Sessions  </item>
+        <item> SP02 Pulse Amplitude             </item>
+        <item> SP03 Pulse Width                 </item>
+        <item> SP04 Pulse Frequency             </item>
+        <item> SP05 Ramp Up Duration            </item>
+        <item> SP06 Ramp Down Duration          </item>
+        <item> SP07 Train On Duration           </item>
+        <item> SP08 Train Off Duration          </item>
+        <item> SP09 Cathode Electrode Number    </item>
+        <item> SP10 Anode Electrode Number      </item>
+        <item> SP11 Max Safe Amplitude          </item>
+        <item> SP12 Min Safe Impedance          </item>
+        <item> ST11 Therapy Session Start       </item>
+        <item> ST12 Therapy Session Stop        </item>
+        <item> ST21 Therapy Session Start       </item>
+        <item> ST22 Therapy Session Stop        </item>
+        <item> ST31 Therapy Session Start       </item>
+        <item> ST32 Therapy Session Stop        </item>
+        <item> ST41 Therapy Session Start       </item>
+        <item> ST42 Therapy Session Stop        </item>
+        <item> ST51 Therapy Session Start       </item>
+        <item> ST52 Therapy Session Stop        </item>
+        <item> ST61 Therapy Session Start       </item>
+        <item> ST62 Therapy Session Stop        </item>
+    </string-array>
+
+    <string-array name="spinnerCommandPayloadSPIDsH2">
+        <item> SP01 Number of Therapy Sessions  </item>
+        <item> SP02 Pulse Amplitude             </item>
+        <item> SP03 Pulse Width                 </item>
+        <item> SP04 Pulse Frequency             </item>
+        <item> SP05 Ramp Up Duration            </item>
+        <item> SP06 Ramp Down Duration          </item>
+        <item> SP07 Train On Duration           </item>
+        <item> SP08 Train Off Duration          </item>
+        <item> SP09 SNS Cathode Electrode Number    </item>
+        <item> SP10 SNS Anode Electrode Number      </item>
+        <item> SP11 VNS Cathode Electrode Number    </item>
+        <item> SP12 VNS Anode Electrode Number      </item>
+        <item> SP13 Max Safe Amplitude          </item>
+        <item> SP14 Min Safe Impedance          </item>
+        <item> SP15 Sine Amplitude              </item>
+        <item> SP16 Max Safe Sine Amplitude     </item>
+        <item> SP17 Sine Frequency              </item>
+        <item> SP18 VNSb Stimulation On Duration    </item>
+        <item> SP19 VNSb Stimulation Off Duration   </item>
+        <item> ST11 Therapy Session Start       </item>
+        <item> ST12 Therapy Session Stop        </item>
+        <item> ST21 Therapy Session Start       </item>
+        <item> ST22 Therapy Session Stop        </item>
+        <item> ST31 Therapy Session Start       </item>
+        <item> ST32 Therapy Session Stop        </item>
+        <item> ST41 Therapy Session Start       </item>
+        <item> ST42 Therapy Session Stop        </item>
+        <item> ST51 Therapy Session Start       </item>
+        <item> ST52 Therapy Session Stop        </item>
+        <item> ST61 Therapy Session Start       </item>
+        <item> ST62 Therapy Session Stop        </item>
+    </string-array>
+
+    <string-array name="spinnerSensorIDs">
+        <item> ECG HR</item>
+        <item> ECG RR</item>
+        <item> ENG1</item>
+        <item> ENG2</item>
+    </string-array>
+
+    <string-array name="spinnerAccFrequency">
+        <item>10 Hz</item>
+        <item>25 Hz</item>
+        <item>50 Hz</item>
+        <item>100Hz</item>
+    </string-array>
+
+    <string-array name="spinnerAccMode">
+        <item>ON DEMAND</item>
+        <item>BUFFER STORAGE</item>
+    </string-array>
+
+    <string-array name="spinnerAccDevID">
+        <item>Device ID: [0x18]</item>
+        <item>Device ID: [0x19]</item>
+    </string-array>
+
+</resources>

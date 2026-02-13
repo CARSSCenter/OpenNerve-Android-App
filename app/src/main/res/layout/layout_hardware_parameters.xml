@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewHardwareParametersTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/title_hardware_parameters"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+
+        <Spinner
+            android:id="@+id/spinnerHardwareParametersID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:minHeight="48dp"
+            android:entries="@array/spinnerCommandPayloadHPIDs"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textViewHardwareParametersDefine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/defStr" />
+
+        <EditText
+            android:id="@+id/editTextHardwareParameters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:autofillHints="Payload"
+            android:minHeight="48dp"
+            android:hint="@string/hint_edit_val"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spinnerHardwareParametersRawData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:minHeight="48dp"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textViewHardwareParametersData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="#EAEAEA"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/buttonReadHP"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C5E1A5"
+                android:onClick="onClick"
+                android:text="Read" />
+
+            <Button
+                android:id="@+id/buttonWriteHP"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#80DEEA"
+                android:onClick="onClick"
+                android:text="Write" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
